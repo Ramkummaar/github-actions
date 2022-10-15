@@ -1,0 +1,14 @@
+name: Shell Commands
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo String
+        run: echo "Hello Ram"
+      - name: Run Multiple Commands
+        run: |
+          node -v
+          npm -v
